@@ -4636,3 +4636,63 @@ While it's not a problem now, it could cause errors if you change the version of
   INFO [3f5a045c] Running /usr/bin/env echo "Branch master (at 9d3040ed29506e4a6ca5d30e3dcbaadffad63b2d) deployed as release 20181111033157 by zh" >> /home/deploy/Next-Week-Is-Important/revisions.log as deploy@47.92.95.165
  DEBUG [3f5a045c] Command: cd /home/deploy/Next-Week-Is-Important/releases && /usr/bin/env echo "Branch master (at 9d3040ed29506e4a6ca5d30e3dcbaadffad63b2d) deployed as release 20181111033157 by zh" >> /home/deploy/Next-Week-Is-Important/revisions.log
   INFO [3f5a045c] Finished in 0.189 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-02-26 23:46:53 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [029a36a4] Running /usr/bin/env mkdir -p /tmp as deploy@39.98.203.135
+ DEBUG [029a36a4] Command: /usr/bin/env mkdir -p /tmp
+  INFO [029a36a4] Finished in 0.654 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-rails_nextweek-production-zh.sh 0.0%
+  INFO Uploading /tmp/git-ssh-rails_nextweek-production-zh.sh 100.0%
+  INFO [63b5e7c3] Running /usr/bin/env chmod 700 /tmp/git-ssh-rails_nextweek-production-zh.sh as deploy@39.98.203.135
+ DEBUG [63b5e7c3] Command: /usr/bin/env chmod 700 /tmp/git-ssh-rails_nextweek-production-zh.sh
+  INFO [63b5e7c3] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [d7e14bbb] Running /usr/bin/env git ls-remote git@github.com:dishangyijiao/next_week_is_important.git HEAD as deploy@39.98.203.135
+ DEBUG [d7e14bbb] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rails_nextweek-production-zh.sh" ; /usr/bin/env git ls-remote git@github.com:dishangyijiao/next_week_is_important.git HEAD )
+ DEBUG [d7e14bbb] 	Warning: Permanently added 'github.com,13.250.177.223' (RSA) to the list of known hosts.
+ DEBUG [d7e14bbb] 	f5e0fb19457c230cc18ed3e4c8df50e88bc18093	HEAD
+  INFO [d7e14bbb] Finished in 6.891 seconds with exit status 0 (successful).
+  INFO [753e012c] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared /home/deploy/rails_nextweek/releases as deploy@39.98.203.135
+ DEBUG [753e012c] Command: /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared /home/deploy/rails_nextweek/releases
+  INFO [753e012c] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO [8c1348a0] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared/log /home/deploy/rails_nextweek/shared/tmp/pids /home/deploy/rails_nextweek/shared/tmp/cache /home/deploy/rails_nextweek/shared/tmp/sockets /home/deploy/rails_nextweek/shared/public/system /home/deploy/rails_nextweek/shared/public/assets as deploy@39.98.203.135
+ DEBUG [8c1348a0] Command: /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared/log /home/deploy/rails_nextweek/shared/tmp/pids /home/deploy/rails_nextweek/shared/tmp/cache /home/deploy/rails_nextweek/shared/tmp/sockets /home/deploy/rails_nextweek/shared/public/system /home/deploy/rails_nextweek/shared/public/assets
+  INFO [8c1348a0] Finished in 0.158 seconds with exit status 0 (successful).
+  INFO [8eeb0879] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared/config as deploy@39.98.203.135
+ DEBUG [8eeb0879] Command: /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared/config
+  INFO [8eeb0879] Finished in 0.160 seconds with exit status 0 (successful).
+ DEBUG [605d09f2] Running [ -f /home/deploy/rails_nextweek/shared/config/database.yml ] as deploy@39.98.203.135
+ DEBUG [605d09f2] Command: [ -f /home/deploy/rails_nextweek/shared/config/database.yml ]
+ DEBUG [605d09f2] Finished in 0.140 seconds with exit status 1 (failed).
+ ERROR linked file /home/deploy/rails_nextweek/shared/config/database.yml does not exist on 39.98.203.135
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-02-26 23:51:53 +0800 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+  INFO [f25735b7] Running /usr/bin/env mkdir -p /tmp as deploy@39.98.203.135
+ DEBUG [f25735b7] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f25735b7] Finished in 0.570 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-rails_nextweek-production-zh.sh 0.0%
+  INFO Uploading /tmp/git-ssh-rails_nextweek-production-zh.sh 100.0%
+  INFO [aec5db88] Running /usr/bin/env chmod 700 /tmp/git-ssh-rails_nextweek-production-zh.sh as deploy@39.98.203.135
+ DEBUG [aec5db88] Command: /usr/bin/env chmod 700 /tmp/git-ssh-rails_nextweek-production-zh.sh
+  INFO [aec5db88] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO [982808f6] Running /usr/bin/env git ls-remote git@github.com:dishangyijiao/next_week_is_important.git HEAD as deploy@39.98.203.135
+ DEBUG [982808f6] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rails_nextweek-production-zh.sh" ; /usr/bin/env git ls-remote git@github.com:dishangyijiao/next_week_is_important.git HEAD )
+ DEBUG [982808f6] 	Warning: Permanently added the RSA host key for IP address '52.74.223.119' to the list of known hosts.
+ DEBUG [982808f6] 	f5e0fb19457c230cc18ed3e4c8df50e88bc18093	HEAD
+  INFO [982808f6] Finished in 6.227 seconds with exit status 0 (successful).
+  INFO [67d9e0ef] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared /home/deploy/rails_nextweek/releases as deploy@39.98.203.135
+ DEBUG [67d9e0ef] Command: /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared /home/deploy/rails_nextweek/releases
+  INFO [67d9e0ef] Finished in 0.117 seconds with exit status 0 (successful).
+  INFO [c1f38751] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared/log /home/deploy/rails_nextweek/shared/tmp/pids /home/deploy/rails_nextweek/shared/tmp/cache /home/deploy/rails_nextweek/shared/tmp/sockets /home/deploy/rails_nextweek/shared/public/system /home/deploy/rails_nextweek/shared/public/assets as deploy@39.98.203.135
+ DEBUG [c1f38751] Command: /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared/log /home/deploy/rails_nextweek/shared/tmp/pids /home/deploy/rails_nextweek/shared/tmp/cache /home/deploy/rails_nextweek/shared/tmp/sockets /home/deploy/rails_nextweek/shared/public/system /home/deploy/rails_nextweek/shared/public/assets
+  INFO [c1f38751] Finished in 0.178 seconds with exit status 0 (successful).
+  INFO [232cccbe] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared/config as deploy@39.98.203.135
+ DEBUG [232cccbe] Command: /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared/config
+  INFO [232cccbe] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [4e174862] Running [ -f /home/deploy/rails_nextweek/shared/config/database.yml ] as deploy@39.98.203.135
+ DEBUG [4e174862] Command: [ -f /home/deploy/rails_nextweek/shared/config/database.yml ]
+ DEBUG [4e174862] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [7457c736] Running [ -f /home/deploy/rails_nextweek/shared/config/secrets.yml ] as deploy@39.98.203.135
+ DEBUG [7457c736] Command: [ -f /home/deploy/rails_nextweek/shared/config/secrets.yml ]
+ DEBUG [7457c736] Finished in 0.138 seconds with exit status 0 (successful).
