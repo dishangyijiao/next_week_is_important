@@ -4696,3 +4696,291 @@ While it's not a problem now, it could cause errors if you change the version of
  DEBUG [7457c736] Running [ -f /home/deploy/rails_nextweek/shared/config/secrets.yml ] as deploy@39.98.203.135
  DEBUG [7457c736] Command: [ -f /home/deploy/rails_nextweek/shared/config/secrets.yml ]
  DEBUG [7457c736] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-02-27 23:08:54 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [55fa9e61] Running /usr/bin/env mkdir -p /tmp as deploy@39.98.203.135
+ DEBUG [55fa9e61] Command: /usr/bin/env mkdir -p /tmp
+  INFO [55fa9e61] Finished in 0.837 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-rails_nextweek-production-zh.sh 0.0%
+  INFO Uploading /tmp/git-ssh-rails_nextweek-production-zh.sh 100.0%
+  INFO [b0fc2e8f] Running /usr/bin/env chmod 700 /tmp/git-ssh-rails_nextweek-production-zh.sh as deploy@39.98.203.135
+ DEBUG [b0fc2e8f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-rails_nextweek-production-zh.sh
+  INFO [b0fc2e8f] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [18ddf61f] Running /usr/bin/env git ls-remote git@github.com:dishangyijiao/next_week_is_important.git HEAD as deploy@39.98.203.135
+ DEBUG [18ddf61f] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rails_nextweek-production-zh.sh" ; /usr/bin/env git ls-remote git@github.com:dishangyijiao/next_week_is_important.git HEAD )
+ DEBUG [18ddf61f] 	ef0efcbd4c568c68d53603b7cd6642270f00d8af	HEAD
+  INFO [18ddf61f] Finished in 5.644 seconds with exit status 0 (successful).
+  INFO [cda0a75a] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared /home/deploy/rails_nextweek/releases as deploy@39.98.203.135
+ DEBUG [cda0a75a] Command: /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared /home/deploy/rails_nextweek/releases
+  INFO [cda0a75a] Finished in 0.099 seconds with exit status 0 (successful).
+  INFO [bd6ea3e0] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared/log /home/deploy/rails_nextweek/shared/tmp/pids /home/deploy/rails_nextweek/shared/tmp/cache /home/deploy/rails_nextweek/shared/tmp/sockets /home/deploy/rails_nextweek/shared/public/system /home/deploy/rails_nextweek/shared/public/assets as deploy@39.98.203.135
+ DEBUG [bd6ea3e0] Command: /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared/log /home/deploy/rails_nextweek/shared/tmp/pids /home/deploy/rails_nextweek/shared/tmp/cache /home/deploy/rails_nextweek/shared/tmp/sockets /home/deploy/rails_nextweek/shared/public/system /home/deploy/rails_nextweek/shared/public/assets
+  INFO [bd6ea3e0] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [420b4b4b] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared/config as deploy@39.98.203.135
+ DEBUG [420b4b4b] Command: /usr/bin/env mkdir -p /home/deploy/rails_nextweek/shared/config
+  INFO [420b4b4b] Finished in 0.163 seconds with exit status 0 (successful).
+ DEBUG [6179681e] Running [ -f /home/deploy/rails_nextweek/shared/config/database.yml ] as deploy@39.98.203.135
+ DEBUG [6179681e] Command: [ -f /home/deploy/rails_nextweek/shared/config/database.yml ]
+ DEBUG [6179681e] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [4f970c17] Running [ -f /home/deploy/rails_nextweek/shared/config/secrets.yml ] as deploy@39.98.203.135
+ DEBUG [4f970c17] Command: [ -f /home/deploy/rails_nextweek/shared/config/secrets.yml ]
+ DEBUG [4f970c17] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [4ef2cd45] Running [ -f /home/deploy/rails_nextweek/current/REVISION ] as deploy@39.98.203.135
+ DEBUG [4ef2cd45] Command: [ -f /home/deploy/rails_nextweek/current/REVISION ]
+ DEBUG [4ef2cd45] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [3f665310] Running /usr/bin/env cat /home/deploy/rails_nextweek/current/REVISION 2>/dev/null as deploy@39.98.203.135
+ DEBUG [3f665310] Command: /usr/bin/env cat /home/deploy/rails_nextweek/current/REVISION 2>/dev/null
+ DEBUG [3f665310] 	ef0efcbd4c568c68d53603b7cd6642270f00d8af
+ DEBUG [3f665310] Finished in 0.207 seconds with exit status 0 (successful).
+ DEBUG [319de03a] Running [ -d /home/deploy/rails_nextweek/current ] as deploy@39.98.203.135
+ DEBUG [319de03a] Command: [ -d /home/deploy/rails_nextweek/current ]
+ DEBUG [319de03a] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [6cb58ed3] Running if test ! -d /home/deploy/rails_nextweek/current; then echo "Directory does not exist '/home/deploy/rails_nextweek/current'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [6cb58ed3] Command: if test ! -d /home/deploy/rails_nextweek/current; then echo "Directory does not exist '/home/deploy/rails_nextweek/current'" 1>&2; false; fi
+ DEBUG [6cb58ed3] Finished in 0.161 seconds with exit status 0 (successful).
+ DEBUG [770fbd33] Running /usr/bin/env [ -f /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid ] as deploy@39.98.203.135
+ DEBUG [770fbd33] Command: cd /home/deploy/rails_nextweek/current && /usr/bin/env [ -f /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid ]
+ DEBUG [770fbd33] Finished in 0.163 seconds with exit status 0 (successful).
+ DEBUG [b87807af] Running /usr/bin/env kill -0 $( cat /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid ) as deploy@39.98.203.135
+ DEBUG [b87807af] Command: cd /home/deploy/rails_nextweek/current && /usr/bin/env kill -0 $( cat /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid )
+ DEBUG [b87807af] Finished in 0.149 seconds with exit status 1 (failed).
+ DEBUG [b61ab8e2] Running [ -f /home/deploy/rails_nextweek/repo/HEAD ] as deploy@39.98.203.135
+ DEBUG [b61ab8e2] Command: [ -f /home/deploy/rails_nextweek/repo/HEAD ]
+ DEBUG [b61ab8e2] Finished in 0.175 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/rails_nextweek/repo
+ DEBUG [07d76d0a] Running if test ! -d /home/deploy/rails_nextweek/repo; then echo "Directory does not exist '/home/deploy/rails_nextweek/repo'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [07d76d0a] Command: if test ! -d /home/deploy/rails_nextweek/repo; then echo "Directory does not exist '/home/deploy/rails_nextweek/repo'" 1>&2; false; fi
+ DEBUG [07d76d0a] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [39ec2182] Running /usr/bin/env git remote set-url origin git@github.com:dishangyijiao/next_week_is_important.git as deploy@39.98.203.135
+ DEBUG [39ec2182] Command: cd /home/deploy/rails_nextweek/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rails_nextweek-production-zh.sh" ; /usr/bin/env git remote set-url origin git@github.com:dishangyijiao/next_week_is_important.git )
+  INFO [39ec2182] Finished in 0.168 seconds with exit status 0 (successful).
+  INFO [9467e985] Running /usr/bin/env git remote update --prune as deploy@39.98.203.135
+ DEBUG [9467e985] Command: cd /home/deploy/rails_nextweek/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rails_nextweek-production-zh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [9467e985] 	Fetching origin
+  INFO [9467e985] Finished in 8.659 seconds with exit status 0 (successful).
+ DEBUG [baa4965d] Running if test ! -d /home/deploy/rails_nextweek/repo; then echo "Directory does not exist '/home/deploy/rails_nextweek/repo'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [baa4965d] Command: if test ! -d /home/deploy/rails_nextweek/repo; then echo "Directory does not exist '/home/deploy/rails_nextweek/repo'" 1>&2; false; fi
+ DEBUG [baa4965d] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [30b218c4] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/releases/20190227150903 as deploy@39.98.203.135
+ DEBUG [30b218c4] Command: cd /home/deploy/rails_nextweek/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rails_nextweek-production-zh.sh" ; /usr/bin/env mkdir -p /home/deploy/rails_nextweek/releases/20190227150903 )
+  INFO [30b218c4] Finished in 0.171 seconds with exit status 0 (successful).
+  INFO [b8001a68] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/rails_nextweek/releases/20190227150903 as deploy@39.98.203.135
+ DEBUG [b8001a68] Command: cd /home/deploy/rails_nextweek/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rails_nextweek-production-zh.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/rails_nextweek/releases/20190227150903 )
+  INFO [b8001a68] Finished in 0.309 seconds with exit status 0 (successful).
+ DEBUG [4a3e4a3c] Running if test ! -d /home/deploy/rails_nextweek/repo; then echo "Directory does not exist '/home/deploy/rails_nextweek/repo'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [4a3e4a3c] Command: if test ! -d /home/deploy/rails_nextweek/repo; then echo "Directory does not exist '/home/deploy/rails_nextweek/repo'" 1>&2; false; fi
+ DEBUG [4a3e4a3c] Finished in 0.159 seconds with exit status 0 (successful).
+ DEBUG [67353d61] Running /usr/bin/env git rev-list --max-count=1 master as deploy@39.98.203.135
+ DEBUG [67353d61] Command: cd /home/deploy/rails_nextweek/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-rails_nextweek-production-zh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [67353d61] 	ef0efcbd4c568c68d53603b7cd6642270f00d8af
+ DEBUG [67353d61] Finished in 0.163 seconds with exit status 0 (successful).
+ DEBUG [56a23632] Running if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [56a23632] Command: if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi
+ DEBUG [56a23632] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [7e65200d] Running /usr/bin/env echo "ef0efcbd4c568c68d53603b7cd6642270f00d8af" >> REVISION as deploy@39.98.203.135
+ DEBUG [7e65200d] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env echo "ef0efcbd4c568c68d53603b7cd6642270f00d8af" >> REVISION
+  INFO [7e65200d] Finished in 0.223 seconds with exit status 0 (successful).
+  INFO [b5080b32] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/releases/20190227150903/config as deploy@39.98.203.135
+ DEBUG [b5080b32] Command: /usr/bin/env mkdir -p /home/deploy/rails_nextweek/releases/20190227150903/config
+  INFO [b5080b32] Finished in 0.133 seconds with exit status 0 (successful).
+ DEBUG [a2033cd9] Running [ -L /home/deploy/rails_nextweek/releases/20190227150903/config/database.yml ] as deploy@39.98.203.135
+ DEBUG [a2033cd9] Command: [ -L /home/deploy/rails_nextweek/releases/20190227150903/config/database.yml ]
+ DEBUG [a2033cd9] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [ec8f3d3a] Running [ -f /home/deploy/rails_nextweek/releases/20190227150903/config/database.yml ] as deploy@39.98.203.135
+ DEBUG [ec8f3d3a] Command: [ -f /home/deploy/rails_nextweek/releases/20190227150903/config/database.yml ]
+ DEBUG [ec8f3d3a] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [aaeb20a0] Running /usr/bin/env rm /home/deploy/rails_nextweek/releases/20190227150903/config/database.yml as deploy@39.98.203.135
+ DEBUG [aaeb20a0] Command: /usr/bin/env rm /home/deploy/rails_nextweek/releases/20190227150903/config/database.yml
+  INFO [aaeb20a0] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [4c86b770] Running /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/config/database.yml /home/deploy/rails_nextweek/releases/20190227150903/config/database.yml as deploy@39.98.203.135
+ DEBUG [4c86b770] Command: /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/config/database.yml /home/deploy/rails_nextweek/releases/20190227150903/config/database.yml
+  INFO [4c86b770] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [fb5a698f] Running [ -L /home/deploy/rails_nextweek/releases/20190227150903/config/secrets.yml ] as deploy@39.98.203.135
+ DEBUG [fb5a698f] Command: [ -L /home/deploy/rails_nextweek/releases/20190227150903/config/secrets.yml ]
+ DEBUG [fb5a698f] Finished in 0.135 seconds with exit status 1 (failed).
+ DEBUG [c6c3b335] Running [ -f /home/deploy/rails_nextweek/releases/20190227150903/config/secrets.yml ] as deploy@39.98.203.135
+ DEBUG [c6c3b335] Command: [ -f /home/deploy/rails_nextweek/releases/20190227150903/config/secrets.yml ]
+ DEBUG [c6c3b335] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [58f32343] Running /usr/bin/env rm /home/deploy/rails_nextweek/releases/20190227150903/config/secrets.yml as deploy@39.98.203.135
+ DEBUG [58f32343] Command: /usr/bin/env rm /home/deploy/rails_nextweek/releases/20190227150903/config/secrets.yml
+  INFO [58f32343] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [d8b197cf] Running /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/config/secrets.yml /home/deploy/rails_nextweek/releases/20190227150903/config/secrets.yml as deploy@39.98.203.135
+ DEBUG [d8b197cf] Command: /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/config/secrets.yml /home/deploy/rails_nextweek/releases/20190227150903/config/secrets.yml
+  INFO [d8b197cf] Finished in 0.161 seconds with exit status 0 (successful).
+  INFO [7e855f49] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/releases/20190227150903 /home/deploy/rails_nextweek/releases/20190227150903/tmp /home/deploy/rails_nextweek/releases/20190227150903/public as deploy@39.98.203.135
+ DEBUG [7e855f49] Command: /usr/bin/env mkdir -p /home/deploy/rails_nextweek/releases/20190227150903 /home/deploy/rails_nextweek/releases/20190227150903/tmp /home/deploy/rails_nextweek/releases/20190227150903/public
+  INFO [7e855f49] Finished in 0.142 seconds with exit status 0 (successful).
+ DEBUG [fd7bddc4] Running [ -L /home/deploy/rails_nextweek/releases/20190227150903/log ] as deploy@39.98.203.135
+ DEBUG [fd7bddc4] Command: [ -L /home/deploy/rails_nextweek/releases/20190227150903/log ]
+ DEBUG [fd7bddc4] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [d8203908] Running [ -d /home/deploy/rails_nextweek/releases/20190227150903/log ] as deploy@39.98.203.135
+ DEBUG [d8203908] Command: [ -d /home/deploy/rails_nextweek/releases/20190227150903/log ]
+ DEBUG [d8203908] Finished in 0.136 seconds with exit status 0 (successful).
+  INFO [1eb5f040] Running /usr/bin/env rm -rf /home/deploy/rails_nextweek/releases/20190227150903/log as deploy@39.98.203.135
+ DEBUG [1eb5f040] Command: /usr/bin/env rm -rf /home/deploy/rails_nextweek/releases/20190227150903/log
+  INFO [1eb5f040] Finished in 0.159 seconds with exit status 0 (successful).
+  INFO [e751618a] Running /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/log /home/deploy/rails_nextweek/releases/20190227150903/log as deploy@39.98.203.135
+ DEBUG [e751618a] Command: /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/log /home/deploy/rails_nextweek/releases/20190227150903/log
+  INFO [e751618a] Finished in 0.149 seconds with exit status 0 (successful).
+ DEBUG [531bd81c] Running [ -L /home/deploy/rails_nextweek/releases/20190227150903/tmp/pids ] as deploy@39.98.203.135
+ DEBUG [531bd81c] Command: [ -L /home/deploy/rails_nextweek/releases/20190227150903/tmp/pids ]
+ DEBUG [531bd81c] Finished in 0.136 seconds with exit status 1 (failed).
+ DEBUG [58aacb04] Running [ -d /home/deploy/rails_nextweek/releases/20190227150903/tmp/pids ] as deploy@39.98.203.135
+ DEBUG [58aacb04] Command: [ -d /home/deploy/rails_nextweek/releases/20190227150903/tmp/pids ]
+ DEBUG [58aacb04] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [8004449e] Running /usr/bin/env rm -rf /home/deploy/rails_nextweek/releases/20190227150903/tmp/pids as deploy@39.98.203.135
+ DEBUG [8004449e] Command: /usr/bin/env rm -rf /home/deploy/rails_nextweek/releases/20190227150903/tmp/pids
+  INFO [8004449e] Finished in 0.169 seconds with exit status 0 (successful).
+  INFO [6b13948b] Running /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/tmp/pids /home/deploy/rails_nextweek/releases/20190227150903/tmp/pids as deploy@39.98.203.135
+ DEBUG [6b13948b] Command: /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/tmp/pids /home/deploy/rails_nextweek/releases/20190227150903/tmp/pids
+  INFO [6b13948b] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [eaf216bf] Running [ -L /home/deploy/rails_nextweek/releases/20190227150903/tmp/cache ] as deploy@39.98.203.135
+ DEBUG [eaf216bf] Command: [ -L /home/deploy/rails_nextweek/releases/20190227150903/tmp/cache ]
+ DEBUG [eaf216bf] Finished in 0.147 seconds with exit status 1 (failed).
+ DEBUG [79b44c35] Running [ -d /home/deploy/rails_nextweek/releases/20190227150903/tmp/cache ] as deploy@39.98.203.135
+ DEBUG [79b44c35] Command: [ -d /home/deploy/rails_nextweek/releases/20190227150903/tmp/cache ]
+ DEBUG [79b44c35] Finished in 0.132 seconds with exit status 0 (successful).
+  INFO [28e60bef] Running /usr/bin/env rm -rf /home/deploy/rails_nextweek/releases/20190227150903/tmp/cache as deploy@39.98.203.135
+ DEBUG [28e60bef] Command: /usr/bin/env rm -rf /home/deploy/rails_nextweek/releases/20190227150903/tmp/cache
+  INFO [28e60bef] Finished in 0.152 seconds with exit status 0 (successful).
+  INFO [07296455] Running /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/tmp/cache /home/deploy/rails_nextweek/releases/20190227150903/tmp/cache as deploy@39.98.203.135
+ DEBUG [07296455] Command: /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/tmp/cache /home/deploy/rails_nextweek/releases/20190227150903/tmp/cache
+  INFO [07296455] Finished in 0.137 seconds with exit status 0 (successful).
+ DEBUG [815ddf50] Running [ -L /home/deploy/rails_nextweek/releases/20190227150903/tmp/sockets ] as deploy@39.98.203.135
+ DEBUG [815ddf50] Command: [ -L /home/deploy/rails_nextweek/releases/20190227150903/tmp/sockets ]
+ DEBUG [815ddf50] Finished in 0.145 seconds with exit status 1 (failed).
+ DEBUG [083bec3a] Running [ -d /home/deploy/rails_nextweek/releases/20190227150903/tmp/sockets ] as deploy@39.98.203.135
+ DEBUG [083bec3a] Command: [ -d /home/deploy/rails_nextweek/releases/20190227150903/tmp/sockets ]
+ DEBUG [083bec3a] Finished in 0.149 seconds with exit status 1 (failed).
+  INFO [58d89cfc] Running /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/tmp/sockets /home/deploy/rails_nextweek/releases/20190227150903/tmp/sockets as deploy@39.98.203.135
+ DEBUG [58d89cfc] Command: /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/tmp/sockets /home/deploy/rails_nextweek/releases/20190227150903/tmp/sockets
+  INFO [58d89cfc] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [71a019f9] Running [ -L /home/deploy/rails_nextweek/releases/20190227150903/public/system ] as deploy@39.98.203.135
+ DEBUG [71a019f9] Command: [ -L /home/deploy/rails_nextweek/releases/20190227150903/public/system ]
+ DEBUG [71a019f9] Finished in 0.141 seconds with exit status 1 (failed).
+ DEBUG [e8bded58] Running [ -d /home/deploy/rails_nextweek/releases/20190227150903/public/system ] as deploy@39.98.203.135
+ DEBUG [e8bded58] Command: [ -d /home/deploy/rails_nextweek/releases/20190227150903/public/system ]
+ DEBUG [e8bded58] Finished in 0.137 seconds with exit status 1 (failed).
+  INFO [99c295a2] Running /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/public/system /home/deploy/rails_nextweek/releases/20190227150903/public/system as deploy@39.98.203.135
+ DEBUG [99c295a2] Command: /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/public/system /home/deploy/rails_nextweek/releases/20190227150903/public/system
+  INFO [99c295a2] Finished in 0.161 seconds with exit status 0 (successful).
+ DEBUG [a341efa5] Running [ -L /home/deploy/rails_nextweek/releases/20190227150903/public/assets ] as deploy@39.98.203.135
+ DEBUG [a341efa5] Command: [ -L /home/deploy/rails_nextweek/releases/20190227150903/public/assets ]
+ DEBUG [a341efa5] Finished in 0.142 seconds with exit status 1 (failed).
+ DEBUG [7fbfda10] Running [ -d /home/deploy/rails_nextweek/releases/20190227150903/public/assets ] as deploy@39.98.203.135
+ DEBUG [7fbfda10] Command: [ -d /home/deploy/rails_nextweek/releases/20190227150903/public/assets ]
+ DEBUG [7fbfda10] Finished in 0.146 seconds with exit status 1 (failed).
+  INFO [b8954af1] Running /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/public/assets /home/deploy/rails_nextweek/releases/20190227150903/public/assets as deploy@39.98.203.135
+ DEBUG [b8954af1] Command: /usr/bin/env ln -s /home/deploy/rails_nextweek/shared/public/assets /home/deploy/rails_nextweek/releases/20190227150903/public/assets
+  INFO [b8954af1] Finished in 0.139 seconds with exit status 0 (successful).
+ DEBUG [b19ad78f] Running if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [b19ad78f] Command: if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi
+ DEBUG [b19ad78f] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [87cf22a2] Running /usr/bin/env bundle check --path /home/deploy/rails_nextweek/shared/bundle as deploy@39.98.203.135
+ DEBUG [87cf22a2] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env bundle check --path /home/deploy/rails_nextweek/shared/bundle
+ DEBUG [87cf22a2] 	Your Gemfile lists the gem capistrano-rails (>= 0) more than once.
+You should probably keep only one of them.
+Remove any duplicate entries and specify the gem only once (per group).
+While it's not a problem now, it could cause errors if you change the version of one of them later.
+ DEBUG [87cf22a2] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [87cf22a2] 	The following gems are missing
+ DEBUG [87cf22a2] 	 * net-ssh (4.2.0)
+ DEBUG [87cf22a2] 	 * net-scp (1.2.1)
+ DEBUG [87cf22a2] 	 * sshkit (1.15.1)
+ DEBUG [87cf22a2] 	 * airbrussh (1.3.0)
+ DEBUG [87cf22a2] 	 * bindex (0.5.0)
+ DEBUG [87cf22a2] 	 * byebug (9.0.6)
+ DEBUG [87cf22a2] 	 * capistrano (3.10.1)
+ DEBUG [87cf22a2] 	 * capistrano-bundler (1.2.0)
+ DEBUG [87cf22a2] 	 * capistrano-passenger (0.2.0)
+ DEBUG [87cf22a2] 	 * capistrano-rails (1.3.0)
+ DEBUG [87cf22a2] 	 * capistrano-sidekiq (1.0.2)
+ DEBUG [87cf22a2] 	 * listen (3.0.8)
+ DEBUG [87cf22a2] 	 * spring (2.0.2)
+ DEBUG [87cf22a2] 	 * spring-watcher-listen (2.0.1)
+ DEBUG [87cf22a2] 	 * web-console (3.5.1)
+ DEBUG [87cf22a2] 	Install missing gems with `bundle install`
+ DEBUG [87cf22a2] Finished in 0.562 seconds with exit status 1 (failed).
+  INFO [a25de614] Running /usr/bin/env bundle install --path /home/deploy/rails_nextweek/shared/bundle --without development test --deployment --quiet as deploy@39.98.203.135
+ DEBUG [a25de614] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env bundle install --path /home/deploy/rails_nextweek/shared/bundle --without development test --deployment --quiet
+  INFO [a25de614] Finished in 0.710 seconds with exit status 0 (successful).
+ DEBUG [c45da584] Running if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [c45da584] Command: if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi
+ DEBUG [c45da584] Finished in 0.160 seconds with exit status 0 (successful).
+  INFO [a4f0a6d5] Running bundle exec rake assets:precompile as deploy@39.98.203.135
+ DEBUG [a4f0a6d5] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; bundle exec rake assets:precompile )
+  INFO [a4f0a6d5] Finished in 2.386 seconds with exit status 0 (successful).
+ DEBUG [de2fd372] Running if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [de2fd372] Command: if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi
+ DEBUG [de2fd372] Finished in 0.161 seconds with exit status 0 (successful).
+  INFO [e6315e51] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/releases/20190227150903/assets_manifest_backup as deploy@39.98.203.135
+ DEBUG [e6315e51] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env mkdir -p /home/deploy/rails_nextweek/releases/20190227150903/assets_manifest_backup
+  INFO [e6315e51] Finished in 0.220 seconds with exit status 0 (successful).
+ DEBUG [6a1a45a6] Running /usr/bin/env ls /home/deploy/rails_nextweek/releases/20190227150903/public/assets/.sprockets-manifest* as deploy@39.98.203.135
+ DEBUG [6a1a45a6] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env ls /home/deploy/rails_nextweek/releases/20190227150903/public/assets/.sprockets-manifest*
+ DEBUG [6a1a45a6] 	/home/deploy/rails_nextweek/releases/20190227150903/public/assets/.sprockets-manifest-58a0c9837a94ace79fc4c1e68aea8735.json
+ DEBUG [6a1a45a6] Finished in 0.128 seconds with exit status 0 (successful).
+ DEBUG [00ec7a80] Running /usr/bin/env ls /home/deploy/rails_nextweek/releases/20190227150903/public/assets/.sprockets-manifest* as deploy@39.98.203.135
+ DEBUG [00ec7a80] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env ls /home/deploy/rails_nextweek/releases/20190227150903/public/assets/.sprockets-manifest*
+ DEBUG [00ec7a80] 	/home/deploy/rails_nextweek/releases/20190227150903/public/assets/.sprockets-manifest-58a0c9837a94ace79fc4c1e68aea8735.json
+ DEBUG [00ec7a80] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [23244a8c] Running /usr/bin/env cp /home/deploy/rails_nextweek/releases/20190227150903/public/assets/.sprockets-manifest-58a0c9837a94ace79fc4c1e68aea8735.json /home/deploy/rails_nextweek/releases/20190227150903/assets_manifest_backup as deploy@39.98.203.135
+ DEBUG [23244a8c] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env cp /home/deploy/rails_nextweek/releases/20190227150903/public/assets/.sprockets-manifest-58a0c9837a94ace79fc4c1e68aea8735.json /home/deploy/rails_nextweek/releases/20190227150903/assets_manifest_backup
+  INFO [23244a8c] Finished in 0.197 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [bca7ee64] Running if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [bca7ee64] Command: if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi
+ DEBUG [bca7ee64] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [4101c158] Running bundle exec rake db:migrate as deploy@39.98.203.135
+ DEBUG [4101c158] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && ( export RAILS_ENV="production" ; bundle exec rake db:migrate )
+  INFO [4101c158] Finished in 1.859 seconds with exit status 0 (successful).
+ DEBUG [cfbc1723] Running [ -d /home/deploy/rails_nextweek/releases/20190227150903 ] as deploy@39.98.203.135
+ DEBUG [cfbc1723] Command: [ -d /home/deploy/rails_nextweek/releases/20190227150903 ]
+ DEBUG [cfbc1723] Finished in 0.137 seconds with exit status 0 (successful).
+ DEBUG [4b0e261f] Running if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [4b0e261f] Command: if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi
+ DEBUG [4b0e261f] Finished in 0.166 seconds with exit status 0 (successful).
+ DEBUG [93f2d26f] Running /usr/bin/env [ -f /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid ] as deploy@39.98.203.135
+ DEBUG [93f2d26f] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env [ -f /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid ]
+ DEBUG [93f2d26f] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [2a9e4a74] Running /usr/bin/env kill -0 $( cat /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid ) as deploy@39.98.203.135
+ DEBUG [2a9e4a74] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env kill -0 $( cat /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid )
+ DEBUG [2a9e4a74] Finished in 0.182 seconds with exit status 1 (failed).
+  INFO [da05ce68] Running /usr/bin/env ln -s /home/deploy/rails_nextweek/releases/20190227150903 /home/deploy/rails_nextweek/releases/current as deploy@39.98.203.135
+ DEBUG [da05ce68] Command: /usr/bin/env ln -s /home/deploy/rails_nextweek/releases/20190227150903 /home/deploy/rails_nextweek/releases/current
+  INFO [da05ce68] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [541fa088] Running /usr/bin/env mv /home/deploy/rails_nextweek/releases/current /home/deploy/rails_nextweek as deploy@39.98.203.135
+ DEBUG [541fa088] Command: /usr/bin/env mv /home/deploy/rails_nextweek/releases/current /home/deploy/rails_nextweek
+  INFO [541fa088] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [141a523d] Running if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [141a523d] Command: if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi
+ DEBUG [141a523d] Finished in 0.143 seconds with exit status 0 (successful).
+  INFO [5ca5807d] Running /usr/bin/env mkdir -p /home/deploy/rails_nextweek/releases/20190227150903/tmp as deploy@39.98.203.135
+ DEBUG [5ca5807d] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env mkdir -p /home/deploy/rails_nextweek/releases/20190227150903/tmp
+  INFO [5ca5807d] Finished in 0.251 seconds with exit status 0 (successful).
+  INFO [618501ec] Running /usr/bin/env touch /home/deploy/rails_nextweek/releases/20190227150903/tmp/restart.txt as deploy@39.98.203.135
+ DEBUG [618501ec] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env touch /home/deploy/rails_nextweek/releases/20190227150903/tmp/restart.txt
+  INFO [618501ec] Finished in 0.178 seconds with exit status 0 (successful).
+ DEBUG [35212a5b] Running if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [35212a5b] Command: if test ! -d /home/deploy/rails_nextweek/releases/20190227150903; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases/20190227150903'" 1>&2; false; fi
+ DEBUG [35212a5b] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [4e188440] Running /usr/bin/env [ -f /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid ] as deploy@39.98.203.135
+ DEBUG [4e188440] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env [ -f /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid ]
+ DEBUG [4e188440] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [a6659f56] Running /usr/bin/env kill -0 $( cat /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid ) as deploy@39.98.203.135
+ DEBUG [a6659f56] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && /usr/bin/env kill -0 $( cat /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid )
+ DEBUG [a6659f56] Finished in 0.140 seconds with exit status 1 (failed).
+  INFO [86d45b8f] Running bundle exec sidekiq --index 0 --pidfile /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid --environment production --logfile /home/deploy/rails_nextweek/shared/log/sidekiq.log --daemon as deploy@39.98.203.135
+ DEBUG [86d45b8f] Command: cd /home/deploy/rails_nextweek/releases/20190227150903 && bundle exec sidekiq --index 0 --pidfile /home/deploy/rails_nextweek/shared/tmp/pids/sidekiq-0.pid --environment production --logfile /home/deploy/rails_nextweek/shared/log/sidekiq.log --daemon
+  INFO [86d45b8f] Finished in 0.862 seconds with exit status 0 (successful).
+ DEBUG [4991b9b7] Running /usr/bin/env ls -x /home/deploy/rails_nextweek/releases as deploy@39.98.203.135
+ DEBUG [4991b9b7] Command: /usr/bin/env ls -x /home/deploy/rails_nextweek/releases
+ DEBUG [4991b9b7] 	20190226155328	20190227150903
+ DEBUG [4991b9b7] Finished in 0.173 seconds with exit status 0 (successful).
+ DEBUG [9f008aa5] Running if test ! -d /home/deploy/rails_nextweek/releases; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases'" 1>&2; false; fi as deploy@39.98.203.135
+ DEBUG [9f008aa5] Command: if test ! -d /home/deploy/rails_nextweek/releases; then echo "Directory does not exist '/home/deploy/rails_nextweek/releases'" 1>&2; false; fi
+ DEBUG [9f008aa5] Finished in 0.168 seconds with exit status 0 (successful).
+  INFO [9b7d0b4f] Running /usr/bin/env echo "Branch master (at ef0efcbd4c568c68d53603b7cd6642270f00d8af) deployed as release 20190227150903 by zh" >> /home/deploy/rails_nextweek/revisions.log as deploy@39.98.203.135
+ DEBUG [9b7d0b4f] Command: cd /home/deploy/rails_nextweek/releases && /usr/bin/env echo "Branch master (at ef0efcbd4c568c68d53603b7cd6642270f00d8af) deployed as release 20190227150903 by zh" >> /home/deploy/rails_nextweek/revisions.log
+  INFO [9b7d0b4f] Finished in 0.126 seconds with exit status 0 (successful).
