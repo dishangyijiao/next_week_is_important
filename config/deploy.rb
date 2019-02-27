@@ -9,7 +9,7 @@ set :repo_url, "git@github.com:dishangyijiao/next_week_is_important.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/deploy/rails-nextweek"
+set :deploy_to, "/home/deploy/rails_nextweek"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
