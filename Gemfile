@@ -17,8 +17,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'mysql2'
 
-gem 'capistrano-rails', group: :development
-
 gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'devise'
