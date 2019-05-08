@@ -1,6 +1,6 @@
 # config valid for current version and patch releases of Capistrano
 sh "ssh-add"
-lock "~> 3.10.1"
+lock "~> 3.11.0"
 
 set :application, "rails_nextweek"
 set :repo_url, "git@github.com:dishangyijiao/next_week_is_important.git"
