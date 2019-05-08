@@ -17,16 +17,21 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'mysql2'
 
-gem 'bootstrap-sass'
+gem "actionview", ">= 5.0.7.2"
+gem "activejob", ">= 5.0.7.1"
+gem "rack", ">= 2.0.6"
+gem "loofah", ">= 2.2.3"
+
+gem "bootstrap-sass", ">= 3.4.1"
 gem 'simple_form'
-gem 'devise'
+gem "devise", ">= 4.6.0"
 gem 'will_paginate'
 gem "redis"
 gem "sidekiq"
 gem 'whenever', :require => false
 
 group :development, :test do
-  gem 'byebug', platform: :mri
+  gem 'pry-nav'
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
   gem 'capistrano-sidekiq'
