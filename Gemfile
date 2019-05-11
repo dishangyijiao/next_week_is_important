@@ -45,3 +45,6 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Rails 异常监控
+gem "sentry-raven"
